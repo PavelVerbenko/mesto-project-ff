@@ -7,19 +7,16 @@ const placesList = document.querySelector('.places__list'); //создали п�
 
 // @todo: Функция создания карточки
 // @todo: Функция удаления карточки 
-const createCard = (content, link) => {
+const createCard = (name, link) => {
   const cardMeaning = cardTemplate.querySelector('.card').cloneNode(true);
   cardMeaning.querySelector('.card__image').src = link;
-  cardMeaning.querySelector('.card__image').alt = content;
-  cardMeaning.querySelector('.card__title').textContent = content;
-  const cardDelBut = cardTemplate.querySelector('.card__delete-button');
+  cardMeaning.querySelector('.card__image').alt = name;
+  cardMeaning.querySelector('.card__title').textContent = name;
+  const cardDelBut = cardMeaning.querySelector('.card__delete-button');
   cardDelBut.addEventListener('click', () => cardMeaning.remove());//удаляет карточки
   return cardMeaning;
-}
-// Разобраться почему не удаляет и не добавляет
-
 
   
-
+}
 // @todo: Вывести карточки на страницу
-initialCards.forEach(element => placesList.append(createCard(element.content, element.link)));//выводить карточки
+initialCards.map(({ name, link }) => placesList.append(createCard(name, link)));
