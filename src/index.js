@@ -1,6 +1,7 @@
+import { initialCards } from "./scripts/cards.js";
+import './pages/index.css'; // добавьте импорт главного файла стилей 
 // @todo: Темплейт карточки
 const cardTemplate = document.querySelector('#card-template').content; //получил доступ к содержимому
-
 // @todo: DOM узлы
 const placesList = document.querySelector('.places__list'); //создали переменную для вывода карточки
 
