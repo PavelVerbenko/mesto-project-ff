@@ -1,6 +1,6 @@
 export const initialCards = [
     {
-      name: "Magic battle",
+      name: "Itodari",
       link: "https://64.media.tumblr.com/b93fc9e74811b86d7340dcb72b4db261/0a1a50cd32a3ba01-50/s500x750/336e8941dbd495fc197663504c4d921d08e1d41d.gifv",
     },
     {

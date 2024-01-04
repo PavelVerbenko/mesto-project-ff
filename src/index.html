@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -8,19 +8,16 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <link
-      rel="icon"
-      href="images/maneki_neko_5xzhr5q0d9ac.svg"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="./images/add-icon.svg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./images/add-icon.svg">
     <!-- <link rel="stylesheet" href="./pages/index.css" /> -->
   </head>
   <body class="page">
     <div class="page__content">
       <header class="header page__section">
         <img
-          src="./images/logo.svg"
-          alt="Логотип проекта масто"
+          src="<%=require('./images/logo.svg')%>"
+          alt="Логотип проекта место"
           class="logo header__logo"
         />
       </header>
@@ -28,10 +25,13 @@
         <section class="profile page__section">
           <div
             class="profile__image"
-            style="background-image: url('./images/avatar2.jpg')"
+            style="
+              background-image: url('https://avatars.githubusercontent.com/u/93076625?v=4_4-mykaleidoscope-ru-p-uspeshnii-student-pinterest-4.jpg');
+            "
           ></div>
+
           <div class="profile__info">
-            <h1 class="profile__title">erbenko Pavel</h1>
+            <h1 class="profile__title">Verbenko Pavel</h1>
             <button class="profile__edit-button" type="button"></button>
             <p class="profile__description">Frontend Researcher</p>
           </div>
